@@ -1,0 +1,22 @@
+body {
+  background-image: url(../img/bg.jpg);
+  color: #FFF;
+}
+.img-logo {
+  margin: 25px auto;
+}
+.slogan {
+  padding: 10px 0;
+  text-align: center;
+}
+footer {
+  border-top: solid 5px #212121;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+footer > div {
+  padding-top: 25px;
+  text-align: center;
+}
+footer div.contacto {
+  font-size: 18px;
+}
