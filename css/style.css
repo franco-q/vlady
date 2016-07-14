@@ -1,22 +1,172 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed';
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 45px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #212121;
+}
+.item {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+.item img {
+  width: 100%;
+}
+.footer *,
+.footer *:hover,
+.footer *:focus {
+  color: #FFF;
+  line-height: 45px;
+  text-decoration: none;
+}
+.wrap-content-window {
+  z-index: 9;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+}
+.wrap-content-window .content-window {
+  color: #FFF;
+  padding: 15px 40px;
+  height: 100%;
+  background: #212121;
+  overflow-y: auto;
+}
+.wrap-content-window .content-window-close {
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  right: 35px;
+  top: 15px;
+  z-index: 1;
+  color: #FFF;
+  outline: none;
+}
+.get-content-window {
+  display: none;
+}
+.footer-btn {
+  text-align: center;
+}
+@media (max-width: 992px) {
+  body {
+    margin-bottom: 135px;
+  }
+}
+.pop-img {
+  cursor: pointer;
+}
 body {
   background-image: url(../img/bg.jpg);
+  background-attachment: fixed;
   color: #FFF;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.productos {
+  overflow: hidden;
+  margin-bottom: 25px;
 }
 .img-logo {
   margin: 25px auto;
+  height: 95px;
 }
 .slogan {
-  padding: 10px 0;
+  padding: 10px;
   text-align: center;
+}
+.item-producto {
+  color: #757575;
+  position: relative;
+  text-align: center;
+  background-color: #FFF;
+  background-clip: content-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.item-producto img {
+  width: 100%;
+}
+.item-producto-label {
+  background-color: transparent;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  color: transparent;
+  transition: all .3s;
+  cursor: pointer;
+}
+.item-producto-label:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #757575;
+}
+.item-producto-label span {
+  position: absolute;
+  top: calc(50% - 5px);
+  width: 100%;
+  left: 0;
+  line-height: 10px;
+}
+.map {
+  display: block;
+  position: relative;
+  bottom: calc(100% + 20px );
+}
+.map img {
+  border: solid 3px #212121;
+  border-radius: 5px;
+  margin: auto;
+}
+.map:after,
+.map:before {
+  top: 100%;
+  left: 10%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.map:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #212121;
+  border-width: 10px;
+  margin-left: -10px;
+}
+.map:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-top-color: #212121;
+  border-width: 14px;
+  margin-left: -14px;
 }
 footer {
-  border-top: solid 5px #212121;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #212121;
+  width: 100%;
+  bottom: 0;
+  height: 45px;
 }
-footer > div {
-  padding-top: 25px;
-  text-align: center;
+footer span,
+footer p,
+footer h2 {
+  cursor: pointer;
+  margin: 0;
+  line-height: 45px;
 }
-footer div.contacto {
-  font-size: 18px;
+footer .glyphicon {
+  color: #FDBA00;
 }
